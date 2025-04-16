@@ -7,12 +7,12 @@ void	init_args(int ac, char **av, t_data *data)
 	int	i;
 
 	i = 0;
-	data->args.qty_of_philos = ft_atoi(av[++i]);
-	data->args.time_to_die = ft_atoi(av[++i]);
-	data->args.time_to_eat = ft_atoi(av[++i]);
-	data->args.time_to_sleep = ft_atoi(av[++i]);
+	data->args.philos = ft_atoi(av[++i]);
+	data->args.ttd = ft_atoi(av[++i]);
+	data->args.tte = ft_atoi(av[++i]);
+	data->args.tts = ft_atoi(av[++i]);
 	if (ac == 5)
-		data->args.number_of_eat = FALSE;
+		data->args.repeat_cycles = 0;
 	else
-		data->args.number_of_eat = ft_atoi(av[++i]);
+		data->args.repeat_cycles = ft_atoi(av[++i]);
 }

@@ -18,7 +18,7 @@ Time to sleep\n \
 
 typedef struct s_args
 {
-	int	qty_of_philos;
+	int	philos;
 	int	ttd;
 	int	tte;
 	int	tts;
